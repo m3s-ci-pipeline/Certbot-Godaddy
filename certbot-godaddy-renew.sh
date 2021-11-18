@@ -9,7 +9,6 @@
 # of the BSD license.  See the LICENSE file for details.
 
 SCRIPTDIR=$(dirname $(readlink -f $0))
-source $SCRIPTDIR/api-settings.sh
 
 certbot renew \
         --non-interactive \

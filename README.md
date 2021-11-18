@@ -5,7 +5,8 @@ These scripts allow the creation of Let's Encrypt wildcard certificates on GoDad
 Note that these scripts require storing the credentials to the GoDaddy API on your server, which is generally not a very good idea.
 
 ## Usage
-- Enter you [GoDaddy API](https://developer.godaddy.com/keys) and domain information in the api-settings.sh file
+- Set your [GoDaddy API](https://developer.godaddy.com/keys) and domain information as environment variables
+  - Can be done using an env file when using docker
 - [OPTIONAL] Edit the certbot-renew-post-hook.sh script to execute actions after renewing a certificate (e.g. nginx reload)
 - Request a new certificate by calling the certbot-godaddy-request.sh script
 	- ```/path/to/certbot-godaddy-request.sh```
